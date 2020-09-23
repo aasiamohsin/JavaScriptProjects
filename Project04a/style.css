@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 0%;
+}
+
+.CC-Img {
+    width: 600px;
+}
+
+h1 {
+    color: rgb(231, 199, 14);
+    text-align: center;
+}
+
+p {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 19px;
+}
+
+.rate {
+    text-align: right;
+    color:  rgb(231, 199, 14);
+    font-size: 25px;
+}
+
+.currency {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0 ;
+}
+
+.currency select {
+    padding: 10px 20px;
+    margin: 0%;
+    font-size: 19px;
+    color: black;
+    width: 50%;
+    background-color: white;
+    border: 0 solid white;
+}
+
+.currency input {
+    padding: 10px 20px;
+    margin: 0%;
+    font-size: 25px;
+    color: white;
+    width: 50%;
+    background-color: transparent;
+    border: 0 solid white; 
+    text-align: right;
+}
+
+.btn {
+    cursor: pointer;
+    font-size: 17px;
+    background-color: rgb(231, 199, 14);
+    font-weight: bold;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+select:focus, input:focus, button:focus {
+    outline: 0;
+}
+
+
+
