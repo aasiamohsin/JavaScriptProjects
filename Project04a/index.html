@@ -28,12 +28,18 @@
                 <option value="BSV">BSV - Bitcoin SV</option>
                 <option value="YFII">YFII - DFI.money</option>
                 <option value="DASH">DASH - Dash</option>
+                <option value="WBTC">WBTC - Wrapped Bitcoin</option>
+                <option value="KCASH">KCASH - Kcash</option>
+                <option value="KSM">KSM - Kusama</option>
+                <option value="TRB">TRB - Tellor</option>
+                <option value="ATOM">ATOM - Cosmos</option>
+
             </select>
             <input type="number" id="crypto-amount" placeholder="0" value="1">
         </div>
 
         <div class="currency">
-            <select class="target-currency">
+            <select id="target-currency">
 
                 <option value='ARS'>ARS - Argentina</option>
                 <option value='AUD'>AUD - Australia</option>
@@ -108,7 +114,9 @@
             <input type="number" id="currency-amount" placeholder="0">
         </div>
 
-       <button class="btn">Reset</button>
+        <button class="reset" id="reset">
+            Reset
+        </button>
         
     </div>
     <script src="script.js"></script>

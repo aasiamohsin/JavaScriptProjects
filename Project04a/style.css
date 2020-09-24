@@ -46,11 +46,10 @@ p {
 .currency select {
     padding: 10px 20px;
     margin: 0%;
-    font-size: 19px;
+    font-size: 18px;
     color: black;
     width: 50%;
-    background-color: white;
-    border: 0 solid white;
+    border: 0;
 }
 
 .currency input {
@@ -60,11 +59,11 @@ p {
     color: white;
     width: 50%;
     background-color: transparent;
-    border: 0 solid white; 
+    border: 0; 
     text-align: right;
 }
 
-.btn {
+.reset {
     cursor: pointer;
     font-size: 17px;
     background-color: rgb(231, 199, 14);
