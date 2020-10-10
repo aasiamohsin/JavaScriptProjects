@@ -46,7 +46,8 @@ input[type='text'] {
 
 .search-btn {
     cursor: pointer;
-    background-color: white;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
     border-left: 0;
     border-radius: 0;
     border-top-right-radius: 10px;
