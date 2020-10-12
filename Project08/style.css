@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+:root {
+    --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1), 0 5px 6px rgba(0, 0, 0, 0.2);
+    --plus: blue;
+    --minus: crimson;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gainsboro;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 400px;
+    margin: 30px auto;
+}
+
+h2 {
+    text-align: center;
+    border-bottom: 3px solid lightgrey;
+}
+
+h4 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+h1 {
+    letter-spacing: 1px;
+    background-color: transparent;
+    text-align: center;
+    border: 3px solid blue;
+    border-radius: 50px;
+    box-shadow: var(--box-shadow);
+    color: grey;
+    padding: 15px;
+    margin: 0;
+}
+
+h3 {
+    text-align: center;
+    border-bottom: 1px solid grey;
+    padding: 10px;
+    margin: 40px 0 10px;
+}
+
+.income-expense-container {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px 0;
+    border: 2px solid grey;
+    border-radius: 70px;
+    box-shadow: var(--box-shadow);
+}
+
+.income-expense-container > div {
+    flex: 1;
+    text-align: center;
+}
+
+.income-expense-container > div:first-of-type {
+    border-right: 1px solid grey;
+}
+
+.money {
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: 5px 0;
+}
+
+.money.plus {
+    color: var(--plus);
+}
+
+.money.minus {
+    color: var(--minus);
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.list li {
+    background-color: black;
+    box-shadow: var(--box-shadow);
+    border-radius: 50px;
+    border: 2px solid grey;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+    margin: 10px;
+}
+
+.list li.plus {
+    border-right: 6px solid var(--plus);
+}
+
+.list li.minus {
+    border-right: 6px solid var(--minus);
+}
+
+.delete-btn {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: 2px solid var(--minus);
+    border-radius: 7px;
+    padding: 5px 8px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-150%, -50%);
+    opacity: 0;
+    transition: 0.5s ease-in;
+}
+
+.list li:hover .delete-btn {
+    opacity: 1;
+}
+
+label {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 5px;
+    display: block;
+    font-size: 16px;
+    width: 100%;
+    padding: 10px;
+}
+
+input:focus {
+    outline: 0;
+}
+
+.btn {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: 2px solid blue;
+    border-radius: 50px;
+    box-shadow: var(--box-shadow);
+    display: block;
+    font-size: 16px;
+    margin: 15px 0 30px;
+    width: 100%;
+    padding: 10px;
+}
+
+.btn:focus {
+    outline: 0;
+}
