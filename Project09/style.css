@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(
+        0deg,
+        rgb(8, 8, 85),
+        rgb(117, 46, 117)
+    );
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Merienda One', cursive;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+.music-container {
+    background-color: black;
+    border-radius: 70px;
+    border: 2px solid darkslateblue;
+    box-shadow: 0 20px 20px 0 rgb(50, 6, 78);
+    display: flex;
+    padding: 20px 30px;
+    position: relative;
+    margin: 100px 0;
+    z-index: 50;
+}
+
+.img-container {
+    position: relative;
+    width: 100px;
+}
+
+.img-container img {
+    border-radius: 50%;
+    border: 2px solid darkslateblue;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    animation: rotate 3s linear infinite;
+    animation-play-state: paused;
+}
+
+.img-container::after {
+    content: '';
+    background-color: gainsboro;
+    border-radius: 50%;
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    bottom: 110%;
+    left: 50%;
+    transform: translate(-50%, 200%);
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.action-btn {
+    background-color: transparent;
+    border: 0;
+    color: silver;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 20px;
+    margin: 0 20px;
+}
+
+.action-btn:focus {
+    outline: 0;
+}
+
+.action-btn.big-btn {
+   
+    font-size: 38px;
+    color: grey;
+}
+
+.music-info {
+    color: silver;
+    background-color: transparent;
+    border-radius: 40px 40px 0 0;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    padding: 10px 10px 10px 150px;
+    width: calc(100% - 40px);
+    transform: translateY(0%);
+    opacity: 0;
+    transition: transform 0.5s ease-in, opacity 0.5s ease-in;
+    z-index: 0;
+}
+
+.music-container.play .music-info {
+    opacity: 1;
+    transform: translateY(-100%);
+}
+
+.music-info h4 {
+    margin: 0;
+}
+
+.progress-container {
+    background-color: lightgrey;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    height: 7px;
+    width: 100%;
+}
+
+.progress {
+    height: 100%;
+    width: 0;
+    transition: width 0.1s linear;
+    background-image:
+
+         -webkit-linear-gradient(-45deg, 
+                                 transparent 33%, rgba(0, 0, 0, .1) 33%, 
+                                 rgba(0,0, 0, .1) 66%, transparent 66%),
+         -webkit-linear-gradient(top, 
+                                 rgba(255, 255, 255, .25), 
+                                 rgba(0, 0, 0, .25)),
+         -webkit-linear-gradient(left, rgb(33, 59, 68), rgb(101, 60, 124));
+  
+      border-radius: 2px; 
+      border: 1px solid silver;
+      background-size: 35px 20px, 100% 100%, 100% 100%;
+
+  }
+
+.music-container.play .img-container img {
+    animation-play-state: running;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
