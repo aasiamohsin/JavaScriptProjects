@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: cornflowerblue;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding-bottom: 100px;
+}
+
+h1 {
+    margin: 40px 0 0;
+}
+
+.filter-container {
+    margin-top: 20px;
+    width: 80vw;
+    max-width: 800px;
+}
+
+.filter {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.post {
+    background-color: floralwhite;
+    color: grey;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 40px 0;
+    padding: 20px;
+    display: flex;
+    width: 80vw;
+    max-width: 800px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.post .number {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    font-size: 16px;
+    background-color: floralwhite;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid cornflowerblue;
+}
+
+.post .post-info {
+    margin: 20px;
+}
+
+.post .post-title {
+    margin: 0;
+}
+
+.post .post-body {
+    margin: 15px 0 0;
+    line-height: 1.5;
+}
+
+.loader {
+    display: flex;
+    position: fixed;
+    bottom: 50px;
+    transition: opacity 0.5s ease-in;
+    opacity: 0;
+}
+
+.loader.show {
+    opacity: 1;
+}
+
+.circle {
+    background-color: black;
+    border-radius: 50%;
+    height: 7px;
+    width: 7px;
+    margin: 3px;
+    animation: bounce 0.5s ease-in infinite;
+}
+
+.circle:nth-of-type(2) {
+    animation-delay: 0.1s;
+}
+
+.circle:nth-of-type(3) {
+    animation-delay: 0.2s;
+}
+
+@keyframes bounce {
+    0%,
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0)
+    }
+}
+
+
+
+
+
+
