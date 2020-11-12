@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: silver;
+    font-family: 'Baloo Tamma 2', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+    font-size: 16px;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.settings-btn {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+
+.settings {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    height: 150px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.settings.show {
+    transform: translateY(-100%);
+}
+
+select {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgba(243, 241, 239, 1);
+}
+
+select:focus, button:focus, input:focus {
+    outline: 0;
+}
+
+.container {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+    position: relative;
+    text-align: center;
+    width: 800px;
+}
+
+h2 {
+    margin-bottom: 70px;
+}
+
+h1 {
+    margin-top: 0;
+    margin-top: 20px;
+}
+
+small {
+    font-size: 16px;
+}
+
+input {
+    border: 3px solid gray;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 600px;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+.score-container {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.time-container {
+    position: absolute;
+    top: 35px;
+    right: 20px;
+}
+
+.end-game-container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1;
+}
+
+.end-game-container h1 {
+    color: white;
+}
+
+.end-game-container p {
+    color: white;
+    font-size: 18px;
+}
+
+.end-game-container button {
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    padding: 25px;
+    border-radius: 3px;
+    width: 7%;
+}
