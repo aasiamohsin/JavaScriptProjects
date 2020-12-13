@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Forecast</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Forecast</h1>
+        <form id="search">
+            <input type="text" id="cities" placeholder="Search for a City">
+
+            <button type="submit">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
+
+        <div class="locationTimeDate" id="locationTimeDate">
+            <h3 class="location" id="searchLocaton"></h3>
+            <h2></h2>
+            <span class="timeDate" id="timeDate"></span>
+        </div>
+
+        <div class="currentWeather" id="currentWeather">
+            <span class="currTemp"><h2>Feels Like:</h2>High: / Low:</span>
+            <h3 class="weather"></h3>
+        </div>
+
+        <main id="main"></main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
