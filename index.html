@@ -1,31 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>JavaScript Projects</title>
-</head>
-<body>
-    <h1>My JavaScript Projects</h1> 
-    <ol>
-        <li><a href="/Project01/index.html">HTML Form Validation</a></li>
-        <li><a href="/Project02/index.html">Seat Selection At Movie Theater</a></li>
-        <li><a href="/Project03/index.html">Video Player</a></li>
-        <li><a href="/Project04/index.html">Exchange Rate Calculator</a></li>
-        <li><a href="/Project04a/index.html">Cryptocurrency Rate Calculator</a></li>
-        <li><a href="/Project05/index.html">High Order Array Methods</a></li>
-        <li><a href="/Project06/index.html">Classic Hangman Game</a></li>
-        <li><a href="/Project07/index.html">Random Meal Finder</a></li>
-        <li><a href="/Project08/index.html">Expense Tracker</a></li>
-        <li><a href="/Project09/index.html">Music Player</a></li>
-        <li><a href="/Project10/index.html">Infinite Scrolling App</a></li>
-        <li><a href="/Project11/index.html">Typing Game</a></li>
-        <li><a href="/Project12/index.html">Memory Cards</a></li>
-        <li><a href="/Project13/index.html">Web Speech</a></li>
-        <li><a href="/Project14/index.html">Search Lyrics</a></li>
-        <li><a href="/Project15/index.html">Weather Forecast</a></li>
-        <li><a href="/Project16/index.html">Breathing Exercise for Relaxing</a></li>
-        <li><a href="/Project17/index.html">Sortable List</a></li>
-    </ol>
-</body>
+  </head>
+  <body>
+    <header class="header">
+      <i class="fab fa-js fa-3x"></i>
+      <h2>JavaScript Projects</h2>
+    </header>
+
+    <div id="main" class="container">
+      <h2 style="text-align: center; padding: 30px 0 0 0">Projects</h2>
+
+      <ul class="list" id="projects">
+        <li>
+          <img src="./images//p01.png" alt="" />
+          <a href="/Project01/index.html">HTML Form Validation</a>
+        </li>
+        <li>
+          <img src="./images//p02.png" alt="" />
+          <a href="/Project02/index.html">Seat Selection At Movie Theater</a>
+        </li>
+        <li>
+          <img src="./images//p03.png" alt="" />
+          <a href="/Project03/index.html">Video Player</a>
+        </li>
+        <li>
+          <img src="./images//p04.png" alt="" />
+          <a href="/Project04/index.html">Exchange Rate Calculator</a>
+        </li>
+        <li>
+          <img src="./images//p05.png" alt="" />
+          <a href="/Project04a/index.html">Cryptocurrency Rate Calculator</a>
+        </li>
+        <li>
+          <img src="./images//p06.png" alt="" />
+          <a href="/Project05/index.html">High Order Array Methods</a>
+        </li>
+        <li>
+          <img src="./images//p07.png" alt="" />
+          <a href="/Project06/index.html">Classic Hangman Game</a>
+        </li>
+        <li>
+          <img src="./images//p08.png" alt="" />
+          <a href="/Project07/index.html">Random Meal Finder</a>
+        </li>
+        <li>
+          <img src="./images//p09.png" alt="" />
+          <a href="/Project08/index.html">Expense Tracker</a>
+        </li>
+        <li>
+          <img src="./images//p10.png" alt="" />
+          <a href="/Project09/index.html">Music Player</a>
+        </li>
+        <li>
+          <img src="./images//p11.png" alt="" />
+          <a href="/Project10/index.html">Infinite Scrolling App</a>
+        </li>
+        <li>
+          <img src="./images//p12.png" alt="" />
+          <a href="/Project11/index.html">Typing Game</a>
+        </li>
+        <li>
+          <img src="./images//p13.png" alt="" />
+          <a href="/Project12/index.html">Memory Cards</a>
+        </li>
+        <li>
+          <img src="./images//p14.png" alt="" />
+          <a href="/Project13/index.html">Web Speech</a>
+        </li>
+        <li>
+          <img src="./images//p15.png" alt="" />
+          <a href="/Project14/index.html">Search Lyrics</a>
+        </li>
+        <li>
+          <img src="./images//p16.png" alt="" />
+          <a href="/Project15/index.html">Weather Forecast</a>
+        </li>
+        <li>
+          <img src="./images//p17.png" alt="" />
+          <a href="/Project16/index.html">Breathing Exercise for Relaxing</a>
+        </li>
+        <li>
+          <img src="./images//p18.png" alt="" />
+          <a href="/Project17/index.html"> Sortable List</a>
+        </li>
+      </ul>
+    </div>
+
+    <span id="open" class="openbtn">
+      <i class="fas fa-bars"></i>
+    </span>
+
+    <nav id="sidenav" class="sidenav">
+      <span id="close" class="closebtn">
+        <i class="fas fa-times"></i>
+      </span>
+      <ul>
+        <li><img src="/image.jpg" alt="" /></li>
+        <li><i class="fas fa-home"></i><a href="/index.html"> Home</a></li>
+        <li>
+          <i class="fab fab fa-js-square"></i><a href="/#projects">Projects</a>
+        </li>
+        <li><i class="fas fa-user-alt"></i><a href="/#about"> About</a></li>
+        <li><i class="fas fa-envelope"></i><a href="/#contact"> Contact</a></li>
+      </ul>
+    </nav>
+
+    <script src="script.js"></script>
+  </body>
 </html>
